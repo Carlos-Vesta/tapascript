@@ -23,10 +23,10 @@ function rockPaperScissors() {
     
     while (playAgain === 'yes' || playAgain === 'y') {
 
-        let player = prompt('Choose Rock, Paper or scissors').toLowerCase().trim();
+        let player = prompt('Choose Rock, Paper or Scissors').toLowerCase().trim();
 
         while (player !== 'rock' && player !== 'paper' && player !== 'scissors') {
-            alert('Invalid input. Choose between Rock, Paper or scissors.');
+            alert('Invalid input. Choose between Rock, Paper or Scissors.');
             player = prompt('Choose Rock, Paper or scissors').toLowerCase().trim();
         }
 
