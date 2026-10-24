@@ -52,22 +52,22 @@ function rockPaperScissors() {
             case player === 'rock' && computerChoose === 'scissors' ||
                 player === 'paper' && computerChoose === 'rock' ||
                 player === 'scissors' && computerChoose === 'paper':
-                alert(`Player Choose: ${player}\nComputer Choose: ${computerChoose}\n==============\nPlayer Wins!`);
+                alert(`Player Choise: ${player}\nComputer Choise: ${computerChoose}\n==============\nPlayer Wins!`);
                 break;
                 
             case player === 'rock' && computerChoose === 'rock' ||
                 player === 'paper' && computerChoose === 'paper' ||
                 player === 'scissors' && computerChoose === 'scissors':
-                alert(`Player Choose: ${player}\nComputer Choose: ${computerChoose}\n==============\nDraw!`);
+                alert(`Player Choise: ${player}\nComputer Choise: ${computerChoose}\n==============\nDraw!`);
                 break;
             default:
-                alert(`Player Choose: ${player}\nComputer Choose: ${computerChoose}\n==============\nComputer Wins!`);
+                alert(`Player Choise: ${player}\nComputer Choise: ${computerChoose}\n==============\nComputer Wins!`);
         }
 
         playAgain = prompt('Do you want to play again? (Yes/No) or (Y/N)').toLowerCase().trim();
 
         while (playAgain !== 'yes' && playAgain !== 'y' && playAgain !== 'no' && playAgain !== 'n') {
-            alert(`I don't understand your choose.\nChoose between Rock, Paper or Scissors.`);
+            alert(`I don't understand your choise.\nPlease type (Yes/No) or (Y/N).`);
             playAgain = prompt('Do you want to play again? (Yes/No) or (Y/N)').toLowerCase().trim();
         }
     }
